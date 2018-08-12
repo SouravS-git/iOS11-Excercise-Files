@@ -1,0 +1,6 @@
+framework module Pods_JSONLogin {
+  umbrella header "Pods-JSONLogin-umbrella.h"
+
+  export *
+  module * { export * }
+}

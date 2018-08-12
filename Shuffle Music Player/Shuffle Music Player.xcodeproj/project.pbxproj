@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA15CAB721171D2C00C8CB71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15CAB621171D2C00C8CB71 /* AppDelegate.swift */; };
+		FA15CAB921171D2C00C8CB71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15CAB821171D2C00C8CB71 /* ViewController.swift */; };
+		FA15CABC21171D2C00C8CB71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA15CABA21171D2C00C8CB71 /* Main.storyboard */; };
+		FA15CABE21171D2D00C8CB71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA15CABD21171D2D00C8CB71 /* Assets.xcassets */; };
+		FA15CAC121171D2D00C8CB71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA15CABF21171D2D00C8CB71 /* LaunchScreen.storyboard */; };
+		FA15CADD21178AB100C8CB71 /* cayuga-summer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA15CAD621178AB000C8CB71 /* cayuga-summer.mp3 */; };
+		FA15CADE21178AB100C8CB71 /* lennys-song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA15CAD721178AB100C8CB71 /* lennys-song.mp3 */; };
+		FA15CADF21178AB100C8CB71 /* wingspan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA15CAD821178AB100C8CB71 /* wingspan.mp3 */; };
+		FA15CAE021178AB100C8CB71 /* broken-shovel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA15CAD921178AB100C8CB71 /* broken-shovel.mp3 */; };
+		FA15CAE121178AB100C8CB71 /* oaklawn-dreams.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA15CADA21178AB100C8CB71 /* oaklawn-dreams.mp3 */; };
+		FA15CAE221178AB100C8CB71 /* merluzzo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA15CADB21178AB100C8CB71 /* merluzzo.mp3 */; };
+		FA15CAE321178AB100C8CB71 /* interlaken-crossroad.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA15CADC21178AB100C8CB71 /* interlaken-crossroad.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA15CAB321171D2C00C8CB71 /* Shuffle Music Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shuffle Music Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA15CAB621171D2C00C8CB71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA15CAB821171D2C00C8CB71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA15CABB21171D2C00C8CB71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA15CABD21171D2D00C8CB71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA15CAC021171D2D00C8CB71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA15CAC221171D2D00C8CB71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA15CAD621178AB000C8CB71 /* cayuga-summer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "cayuga-summer.mp3"; sourceTree = "<group>"; };
+		FA15CAD721178AB100C8CB71 /* lennys-song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "lennys-song.mp3"; sourceTree = "<group>"; };
+		FA15CAD821178AB100C8CB71 /* wingspan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wingspan.mp3; sourceTree = "<group>"; };
+		FA15CAD921178AB100C8CB71 /* broken-shovel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "broken-shovel.mp3"; sourceTree = "<group>"; };
+		FA15CADA21178AB100C8CB71 /* oaklawn-dreams.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "oaklawn-dreams.mp3"; sourceTree = "<group>"; };
+		FA15CADB21178AB100C8CB71 /* merluzzo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = merluzzo.mp3; sourceTree = "<group>"; };
+		FA15CADC21178AB100C8CB71 /* interlaken-crossroad.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "interlaken-crossroad.mp3"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA15CAB021171D2C00C8CB71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA15CAAA21171D2C00C8CB71 = {
+			isa = PBXGroup;
+			children = (
+				FA15CAB521171D2C00C8CB71 /* Shuffle Music Player */,
+				FA15CAB421171D2C00C8CB71 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA15CAB421171D2C00C8CB71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA15CAB321171D2C00C8CB71 /* Shuffle Music Player.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA15CAB521171D2C00C8CB71 /* Shuffle Music Player */ = {
+			isa = PBXGroup;
+			children = (
+				FA15CAB621171D2C00C8CB71 /* AppDelegate.swift */,
+				FA15CAB821171D2C00C8CB71 /* ViewController.swift */,
+				FA15CABA21171D2C00C8CB71 /* Main.storyboard */,
+				FA15CABD21171D2D00C8CB71 /* Assets.xcassets */,
+				FA15CABF21171D2D00C8CB71 /* LaunchScreen.storyboard */,
+				FA15CAC221171D2D00C8CB71 /* Info.plist */,
+				FA15CAE421178AB800C8CB71 /* myMusic */,
+			);
+			path = "Shuffle Music Player";
+			sourceTree = "<group>";
+		};
+		FA15CAE421178AB800C8CB71 /* myMusic */ = {
+			isa = PBXGroup;
+			children = (
+				FA15CAD921178AB100C8CB71 /* broken-shovel.mp3 */,
+				FA15CAD621178AB000C8CB71 /* cayuga-summer.mp3 */,
+				FA15CADC21178AB100C8CB71 /* interlaken-crossroad.mp3 */,
+				FA15CAD721178AB100C8CB71 /* lennys-song.mp3 */,
+				FA15CADB21178AB100C8CB71 /* merluzzo.mp3 */,
+				FA15CADA21178AB100C8CB71 /* oaklawn-dreams.mp3 */,
+				FA15CAD821178AB100C8CB71 /* wingspan.mp3 */,
+			);
+			path = myMusic;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA15CAB221171D2C00C8CB71 /* Shuffle Music Player */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA15CAC521171D2D00C8CB71 /* Build configuration list for PBXNativeTarget "Shuffle Music Player" */;
+			buildPhases = (
+				FA15CAAF21171D2C00C8CB71 /* Sources */,
+				FA15CAB021171D2C00C8CB71 /* Frameworks */,
+				FA15CAB121171D2C00C8CB71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Shuffle Music Player";
+			productName = "Shuffle Music Player";
+			productReference = FA15CAB321171D2C00C8CB71 /* Shuffle Music Player.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA15CAAB21171D2C00C8CB71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Sourav Sarkar";
+				TargetAttributes = {
+					FA15CAB221171D2C00C8CB71 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = FA15CAAE21171D2C00C8CB71 /* Build configuration list for PBXProject "Shuffle Music Player" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA15CAAA21171D2C00C8CB71;
+			productRefGroup = FA15CAB421171D2C00C8CB71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA15CAB221171D2C00C8CB71 /* Shuffle Music Player */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA15CAB121171D2C00C8CB71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA15CAE221178AB100C8CB71 /* merluzzo.mp3 in Resources */,
+				FA15CAC121171D2D00C8CB71 /* LaunchScreen.storyboard in Resources */,
+				FA15CAE021178AB100C8CB71 /* broken-shovel.mp3 in Resources */,
+				FA15CABE21171D2D00C8CB71 /* Assets.xcassets in Resources */,
+				FA15CABC21171D2C00C8CB71 /* Main.storyboard in Resources */,
+				FA15CADF21178AB100C8CB71 /* wingspan.mp3 in Resources */,
+				FA15CADE21178AB100C8CB71 /* lennys-song.mp3 in Resources */,
+				FA15CAE121178AB100C8CB71 /* oaklawn-dreams.mp3 in Resources */,
+				FA15CAE321178AB100C8CB71 /* interlaken-crossroad.mp3 in Resources */,
+				FA15CADD21178AB100C8CB71 /* cayuga-summer.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA15CAAF21171D2C00C8CB71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA15CAB921171D2C00C8CB71 /* ViewController.swift in Sources */,
+				FA15CAB721171D2C00C8CB71 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA15CABA21171D2C00C8CB71 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA15CABB21171D2C00C8CB71 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA15CABF21171D2D00C8CB71 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA15CAC021171D2D00C8CB71 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA15CAC321171D2D00C8CB71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA15CAC421171D2D00C8CB71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA15CAC621171D2D00C8CB71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D482MV8P94;
+				INFOPLIST_FILE = "Shuffle Music Player/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sourav.Shuffle-Music-Player";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA15CAC721171D2D00C8CB71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D482MV8P94;
+				INFOPLIST_FILE = "Shuffle Music Player/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sourav.Shuffle-Music-Player";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA15CAAE21171D2C00C8CB71 /* Build configuration list for PBXProject "Shuffle Music Player" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA15CAC321171D2D00C8CB71 /* Debug */,
+				FA15CAC421171D2D00C8CB71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA15CAC521171D2D00C8CB71 /* Build configuration list for PBXNativeTarget "Shuffle Music Player" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA15CAC621171D2D00C8CB71 /* Debug */,
+				FA15CAC721171D2D00C8CB71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA15CAAB21171D2C00C8CB71 /* Project object */;
+}

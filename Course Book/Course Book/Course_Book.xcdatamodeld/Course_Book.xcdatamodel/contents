@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Category" representedClassName="Category" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="categoryTocourse" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Course" inverseName="courseTocategory" inverseEntity="Course" syncable="YES"/>
+        <relationship name="categoryToimage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Image" inverseName="imageTocategory" inverseEntity="Image" syncable="YES"/>
+    </entity>
+    <entity name="Course" representedClassName="Course" syncable="YES">
+        <attribute name="coursename" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="publisheddate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="courseTocategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="categoryTocourse" inverseEntity="Category" syncable="YES"/>
+        <relationship name="courseToimage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Image" inverseName="imageTocourse" inverseEntity="Image" syncable="YES"/>
+    </entity>
+    <entity name="Image" representedClassName="Image" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="imageTocategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="categoryToimage" inverseEntity="Category" syncable="YES"/>
+        <relationship name="imageTocourse" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Course" inverseName="courseToimage" inverseEntity="Course" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Course" positionX="-351" positionY="-196" width="128" height="133"/>
+        <element name="Image" positionX="-54" positionY="18" width="128" height="88"/>
+        <element name="Category" positionX="-99" positionY="-27" width="128" height="88"/>
+    </elements>
+</model>

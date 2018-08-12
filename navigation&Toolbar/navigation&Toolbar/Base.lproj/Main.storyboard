@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="navigation_Toolbar_slider" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dx2-tJ-m22">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="General" id="ylS-B9-gAm">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Hsl-bB-f6R"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="2UG-nR-d4L"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xq2-y5-pLK">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="6jq-cK-Gir"/>
+                                    <constraint firstAttribute="width" constant="320" id="zDG-xo-nxa"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Item" systemItem="add" id="937-Dl-rP2"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="wqn-4G-K0K"/>
+                                    <barButtonItem systemItem="trash" id="a1S-zv-0jb"/>
+                                </items>
+                            </toolbar>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Rh9-pz-77k">
+                                <rect key="frame" x="14" y="74" width="292" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="msG-xs-9y1"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderBar:" destination="BYZ-38-t0r" eventType="valueChanged" id="gIn-va-OnW"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rD6-LB-kIS">
+                                <rect key="frame" x="155" y="112" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Dx2-tJ-m22" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6Hl-N9-Xda"/>
+                            <constraint firstItem="Dx2-tJ-m22" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8yD-jD-kgC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rD6-LB-kIS" secondAttribute="trailing" constant="154" id="9A1-qO-O3b"/>
+                            <constraint firstItem="Xq2-y5-pLK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FHk-Aw-8SL"/>
+                            <constraint firstItem="Rh9-pz-77k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="FZA-cR-gFV"/>
+                            <constraint firstItem="Rh9-pz-77k" firstAttribute="top" secondItem="Dx2-tJ-m22" secondAttribute="bottom" constant="10" id="GY2-dm-kAm"/>
+                            <constraint firstItem="Xq2-y5-pLK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JrQ-yH-HP6"/>
+                            <constraint firstItem="Dx2-tJ-m22" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="OnZ-eN-aGc"/>
+                            <constraint firstItem="Xq2-y5-pLK" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gpd-dT-mjp"/>
+                            <constraint firstItem="rD6-LB-kIS" firstAttribute="top" secondItem="Rh9-pz-77k" secondAttribute="bottom" constant="8" id="iF2-sd-U6b"/>
+                            <constraint firstItem="rD6-LB-kIS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="155" id="oTU-ty-te1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rh9-pz-77k" secondAttribute="trailing" constant="16" id="tnm-c7-krW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="slider" destination="Rh9-pz-77k" id="QEs-Ae-vud"/>
+                        <outlet property="sliderLabel" destination="rD6-LB-kIS" id="7Ot-Yf-AP3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.875" y="85.563380281690144"/>
+        </scene>
+    </scenes>
+</document>

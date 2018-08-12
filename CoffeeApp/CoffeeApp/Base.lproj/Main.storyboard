@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoffeeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the no. of cups" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QE2-eC-uwL">
+                                <rect key="frame" x="16" y="81" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coffee App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hQ-lP-gQ5">
+                                <rect key="frame" x="109" y="32" width="103" height="24"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price : $0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCK-mc-EKq">
+                                <rect key="frame" x="16" y="134" width="288" height="24"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wl7-ah-ktm">
+                                <rect key="frame" x="62" y="192" width="196" height="30"/>
+                                <color key="backgroundColor" red="0.02928750216960907" green="0.011262852698564529" blue="0.039100978523492813" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Click to show Price">
+                                    <color key="titleColor" red="0.96839697637196231" green="0.99548500065705925" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showPrice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ieW-cO-WF3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please fill the input" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDq-tW-FHH">
+                                <rect key="frame" x="82" y="274" width="156" height="20"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                <color key="textColor" red="0.99528008699417114" green="0.99240690469741821" blue="0.99217063188552856" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SPC-uU-INe">
+                                <rect key="frame" x="16" y="57" width="288" height="1"/>
+                                <color key="backgroundColor" red="0.05445658415555954" green="0.010770101100206375" blue="0.0098174698650836945" alpha="0.87843143939971924" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KDq-tW-FHH" secondAttribute="bottom" constant="274" id="1YS-Ew-xv4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QE2-eC-uwL" secondAttribute="trailing" constant="16" id="39P-Nd-zze"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3hQ-lP-gQ5" secondAttribute="trailing" constant="108" id="3dr-aH-5tJ"/>
+                            <constraint firstItem="QE2-eC-uwL" firstAttribute="top" secondItem="3hQ-lP-gQ5" secondAttribute="bottom" constant="25" id="5ka-B7-7Kd"/>
+                            <constraint firstItem="SPC-uU-INe" firstAttribute="top" secondItem="3hQ-lP-gQ5" secondAttribute="bottom" constant="1" id="6ii-ww-qD2"/>
+                            <constraint firstItem="QE2-eC-uwL" firstAttribute="top" secondItem="SPC-uU-INe" secondAttribute="bottom" constant="23" id="C1R-L6-3cZ"/>
+                            <constraint firstItem="eCK-mc-EKq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="JrK-35-G6u"/>
+                            <constraint firstItem="Wl7-ah-ktm" firstAttribute="top" secondItem="eCK-mc-EKq" secondAttribute="bottom" constant="34" id="LKw-yq-wqr"/>
+                            <constraint firstItem="SPC-uU-INe" firstAttribute="top" secondItem="3hQ-lP-gQ5" secondAttribute="bottom" constant="1" id="OPW-sc-FFK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wl7-ah-ktm" secondAttribute="trailing" constant="62" id="Oyr-Bs-LoK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KDq-tW-FHH" secondAttribute="trailing" constant="82" id="QEr-cq-vo1"/>
+                            <constraint firstItem="KDq-tW-FHH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="WAI-D0-1r8"/>
+                            <constraint firstItem="KDq-tW-FHH" firstAttribute="top" secondItem="Wl7-ah-ktm" secondAttribute="bottom" constant="52" id="ZZB-cs-5rB"/>
+                            <constraint firstItem="eCK-mc-EKq" firstAttribute="top" secondItem="QE2-eC-uwL" secondAttribute="bottom" constant="23" id="ecb-Z6-NtI"/>
+                            <constraint firstItem="QE2-eC-uwL" firstAttribute="top" secondItem="SPC-uU-INe" secondAttribute="bottom" constant="23" id="iOl-lY-ex3"/>
+                            <constraint firstItem="3hQ-lP-gQ5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="iat-9f-htr"/>
+                            <constraint firstItem="Wl7-ah-ktm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="mff-xg-Nqa"/>
+                            <constraint firstItem="QE2-eC-uwL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="mpb-Za-pH2"/>
+                            <constraint firstItem="3hQ-lP-gQ5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="109" id="o5C-jy-qWX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eCK-mc-EKq" secondAttribute="trailing" constant="16" id="rY9-Ow-LuB"/>
+                            <constraint firstItem="SPC-uU-INe" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="s0I-cN-HLf"/>
+                            <constraint firstItem="SPC-uU-INe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="tB3-jr-0zY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="errorLabel" destination="KDq-tW-FHH" id="N5d-7v-zog"/>
+                        <outlet property="priceLabel" destination="eCK-mc-EKq" id="6Xn-oZ-P3d"/>
+                        <outlet property="textInput" destination="QE2-eC-uwL" id="2z0-Ns-ra1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33.75" y="30.633802816901408"/>
+        </scene>
+    </scenes>
+</document>

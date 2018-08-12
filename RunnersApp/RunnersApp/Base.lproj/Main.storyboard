@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RunnersApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flash" translatesAutoresizingMaskIntoConstraints="NO" id="iZC-os-fYX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Runners App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgV-Br-keg">
+                                <rect key="frame" x="73.5" y="51" width="228" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YgV-Br-keg" secondAttribute="height" multiplier="38:7" id="SRU-ky-VDT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="36"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Oval" translatesAutoresizingMaskIntoConstraints="NO" id="gtM-PV-HID">
+                                <rect key="frame" x="86" y="118" width="203" height="203"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="203" id="3Z5-S1-Euc"/>
+                                    <constraint firstAttribute="height" constant="203" id="Uvz-Go-Lw9"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1200" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ene-iD-zNn">
+                                <rect key="frame" x="142.5" y="198" width="91" height="42"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="36"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XBJ-Wq-YSf">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Stop" id="Peb-Co-6wx">
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="stopTimer:" destination="BYZ-38-t0r" id="Y7h-TP-pBm"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="t4C-gW-mYM"/>
+                                    <barButtonItem title="Reset" id="vWf-88-3e0">
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="resetTimer:" destination="BYZ-38-t0r" id="p1a-We-u7g"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3W3-e7-M5f">
+                                <rect key="frame" x="134" y="548" width="107" height="45"/>
+                                <color key="backgroundColor" red="0.26666666666666666" green="0.74117647058823533" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="Nxi-fv-B9O"/>
+                                    <constraint firstAttribute="height" constant="45" id="foX-y0-kti"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="27"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="timerFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m5e-4n-2kc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iZC-os-fYX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0qu-8Z-MwN"/>
+                            <constraint firstItem="XBJ-Wq-YSf" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="4xh-sV-Mqr"/>
+                            <constraint firstItem="XBJ-Wq-YSf" firstAttribute="top" secondItem="3W3-e7-M5f" secondAttribute="bottom" constant="30" id="BvF-zB-K8F"/>
+                            <constraint firstItem="iZC-os-fYX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DkX-b6-WuZ"/>
+                            <constraint firstItem="ene-iD-zNn" firstAttribute="top" secondItem="YgV-Br-keg" secondAttribute="bottom" constant="105" id="EfC-eu-FWQ"/>
+                            <constraint firstItem="iZC-os-fYX" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="GEg-Ta-dZ8"/>
+                            <constraint firstItem="YgV-Br-keg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="31" id="QUg-jH-0To"/>
+                            <constraint firstItem="iZC-os-fYX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ru8-bM-bqq"/>
+                            <constraint firstItem="gtM-PV-HID" firstAttribute="top" secondItem="YgV-Br-keg" secondAttribute="bottom" constant="25" id="URX-ce-grg"/>
+                            <constraint firstItem="3W3-e7-M5f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mhO-FQ-r0O"/>
+                            <constraint firstItem="XBJ-Wq-YSf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nw7-ev-xhM"/>
+                            <constraint firstItem="ene-iD-zNn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="orG-Zg-8o9"/>
+                            <constraint firstItem="XBJ-Wq-YSf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="su6-A3-KGF"/>
+                            <constraint firstItem="gtM-PV-HID" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uVr-HV-KiD"/>
+                            <constraint firstItem="YgV-Br-keg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wed-Ya-uYS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="myButton" destination="3W3-e7-M5f" id="LJ3-Tf-kD1"/>
+                        <outlet property="stopButton" destination="Peb-Co-6wx" id="jbY-dE-pAM"/>
+                        <outlet property="timerLabel" destination="ene-iD-zNn" id="xPT-yX-PKf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="131.78410794602701"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Oval" width="210" height="210"/>
+        <image name="flash" width="414" height="736"/>
+    </resources>
+</document>
